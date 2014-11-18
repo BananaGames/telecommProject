@@ -46,7 +46,7 @@ public class MainActivity extends ActionBarActivity {
     }
     
     /**
-     * @param none
+     * @param view
      * Should invoke a new activity, namely the Wifi P2P class
      */
     public void connectToPlayer(View view) {
@@ -55,13 +55,13 @@ public class MainActivity extends ActionBarActivity {
     	//Wifi.class needs to be implemented or copied from example
     	Intent  intent = new Intent(this, Wifi.class)
     	
-    	/* Start activity once all paramaters are passed to the wifi class,
+    	/* Start activity once all parameters are passed to the wifi class,
     	 * ideally the host IP address, port number, message to connect*/
     	startActivity(intent);
     }
     
     /**
-     * @param none
+     * @param view
      * Should invoke a new activity
      */
     public void disconnect(View view) {
