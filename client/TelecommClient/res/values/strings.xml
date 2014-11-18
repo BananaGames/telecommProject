@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TelecommClient</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="connect_string">Connect to Player 1&#8211;2</string>
+	<string name="disconnect_string">Disconnect from Player 1&#8211;2</string>
+	<string name="player_string">No Player assigned</string>
+	<string name="player1_string">You are Player X</string>
+	<string name="player2_string">You are Player O</string>
+	
+</resources>

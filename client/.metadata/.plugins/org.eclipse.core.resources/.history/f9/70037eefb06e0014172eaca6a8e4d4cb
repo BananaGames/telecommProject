@@ -1,0 +1,28 @@
+package com.example.telecommclient;
+
+import android.content.Context;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.BaseAdapter;
+import android.widget.Button;
+
+public class ButtonAdapter extends ArrayAdapter<Button> {
+
+	private Context mContext;
+	private static Button[] mButtons = {};
+	
+	public ButtonAdapter(Context context, int resource){
+		super(context, resource, mButtons);
+		mContext = context;
+	}
+	
+	public ButtonAdapter(Context context, int resource, int textViewResourceId,
+			Button[] buttons) {
+		super(context, resource, textViewResourceId, buttons);
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+
+}
