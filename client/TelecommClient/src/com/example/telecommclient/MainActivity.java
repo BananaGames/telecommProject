@@ -1,9 +1,11 @@
 package com.example.telecommclient;
 
 import android.support.v7.app.ActionBarActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -47,16 +49,22 @@ public class MainActivity extends ActionBarActivity {
      * @param none
      * Should invoke a new activity, namely the Wifi P2P class
      */
-    public void connectToPlayer() {
+    public void connectToPlayer(View view) {
     	/* This method gets called when the player presses the connect button,
     	 * it should call the wifi P2P class to get the info of player 2 */
+    	//Wifi.class needs to be implemented or copied from example
+    	Intent  intent = new Intent(this, Wifi.class)
+    	
+    	/* Start activity once all paramaters are passed to the wifi class,
+    	 * ideally the host IP address, port number, message to connect*/
+    	startActivity(intent);
     }
     
     /**
      * @param none
      * Should invoke a new activity
      */
-    public void disconnect() {
+    public void disconnect(View view) {
     	/* This method gets called when the player presses the disconnect button,
     	 * it should send a goodbye packet to the other player */
     }
