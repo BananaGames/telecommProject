@@ -15,8 +15,10 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="132dp"
-        android:text="@string/connect_string" />
-
+        android:text="@string/connect_string"
+        android:onClick="connectToPlayer" />
+		<!-- The above should invoke a connect activity when button is presed -->
+		
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
@@ -25,7 +27,8 @@
         android:layout_alignRight="@+id/buttonConnect"
         android:layout_alignTop="@+id/buttonConnect"
         android:layout_marginTop="54dp"
-        android:text="@string/disconnect_string" />
+        android:text="@string/disconnect_string" 
+        android:onClick="disconnect"/>
 
     <Spinner
         android:id="@+id/spinner1"

@@ -42,4 +42,22 @@ public class MainActivity extends ActionBarActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+    
+    /**
+     * @param none
+     * Should invoke a new activity, namely the Wifi P2P class
+     */
+    public void connectToPlayer() {
+    	/* This method gets called when the player presses the connect button,
+    	 * it should call the wifi P2P class to get the info of player 2 */
+    }
+    
+    /**
+     * @param none
+     * Should invoke a new activity
+     */
+    public void disconnect() {
+    	/* This method gets called when the player presses the disconnect button,
+    	 * it should send a goodbye packet to the other player */
+    }
 }
