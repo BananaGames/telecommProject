@@ -1,0 +1,15 @@
+package com.example.telecommclient;
+
+public class TicTacToeGame {
+	
+	private char[][] TicTacToeBoard = new char[3][3];
+	private boolean myTurn = false;
+	
+    public void init(){
+    	for(int i = 0; i< TicTacBoard[0].length; i++){
+    		
+    	}
+    }
+	
+
+}

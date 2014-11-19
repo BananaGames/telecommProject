@@ -1,0 +1,8 @@
+package com.example.telecommclient;
+
+public class TicTacToeGame {
+	
+	private char[] TicTacToeBoard = new char[3][3];
+	
+
+}

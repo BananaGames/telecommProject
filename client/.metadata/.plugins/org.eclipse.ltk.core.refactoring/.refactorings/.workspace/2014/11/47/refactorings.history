@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;WiFiServiceDiscoveryActivity&apos;" deleteContents="false" description="Delete resource &apos;WiFiServiceDiscoveryActivity&apos;" element1="/WiFiServiceDiscoveryActivity" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1416422205913"/>&#x0A;<refactoring comment="Delete resource &apos;WiFiDirectActivity&apos;" deleteContents="false" description="Delete resource &apos;WiFiDirectActivity&apos;" element1="/WiFiDirectActivity" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1416425459146"/>
+</session>

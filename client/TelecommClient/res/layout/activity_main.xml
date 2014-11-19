@@ -53,17 +53,21 @@
             <Button
                 android:id="@+id/buttonTopLeft"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:onClick="buttonTopLeft_onClick" />
 
             <Button
                 android:id="@+id/buttonTopMiddle"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:onClick="buttonTopMid_onClick" />
 
             <Button
                 android:id="@+id/buttonTopRight"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:onClick="buttonTopRight_onClick" />
+
         </TableRow>
 
         <TableRow
@@ -74,17 +78,21 @@
             <Button
                 android:id="@+id/buttonMidLeft"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:onClick="buttonMidLeft_onClick" />
 
             <Button
                 android:id="@+id/buttonMidMid"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:onClick="buttonMidMId_onClick" />
 
             <Button
                 android:id="@+id/buttonMidRight"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:onClick="buttonMidRight_onClick" />
+
         </TableRow>
 
         <TableRow
@@ -95,17 +103,21 @@
             <Button
                 android:id="@+id/buttonBotLeft"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:onClick="buttonBotLeft_onClick" />
 
             <Button
                 android:id="@+id/buttonBotMid"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:onClick="buttonBotMid_onClick" />
 
             <Button
                 android:id="@+id/buttonBotRight"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:onClick="buttonBotRight_onClick" />
+
         </TableRow>
     </TableLayout>
 

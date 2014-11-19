@@ -9,7 +9,9 @@ import android.view.View;
 
 
 public class MainActivity extends ActionBarActivity {
-
+	
+	//Global 3x3 matrix to store moves 
+	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,7 +55,7 @@ public class MainActivity extends ActionBarActivity {
     	/* This method gets called when the player presses the connect button,
     	 * it should call the wifi P2P class to get the info of player 2 */
     	//Wifi.class needs to be implemented or copied from example
-    	Intent  intent = new Intent(this, Wifi.class)
+    	Intent  intent = new Intent(this, WiFiDirectActivity.class);
     	
     	/* Start activity once all parameters are passed to the wifi class,
     	 * ideally the host IP address, port number, message to connect*/
@@ -67,5 +69,41 @@ public class MainActivity extends ActionBarActivity {
     public void disconnect(View view) {
     	/* This method gets called when the player presses the disconnect button,
     	 * it should send a goodbye packet to the other player */
+    }
+    
+    public void buttonTopLeft_onClick(View view) {
+    	
+    }
+    
+    public void buttonTopMid_onClick(View view) {
+    	
+    }
+    
+    public void buttonTopRight_onClick(View view) {
+    	
+    }
+    
+    public void buttonMidLeft_onClick(View view) {
+    	
+    }
+    
+    public void buttonMidMid_onClick(View view) {
+    	
+    }
+    
+    public void buttonMidRight_onClick(View view) {
+    	
+    }
+    
+    public void buttonBotLeft_onClick(View view) {
+    	
+    }
+    
+    public void buttonBotMid_onClick(View view) {
+    	
+    }
+    
+    public void buttonBotRight_onClick(View view) {
+    	
     }
 }
