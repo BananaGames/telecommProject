@@ -12,4 +12,5 @@
 <fullyQualifiedTypeName name="android.widget.ArrayAdapter"/>
 <fullyQualifiedTypeName name="android.widget.Button"/>
 <fullyQualifiedTypeName name="com.example.telecommclient.R.id"/>
+<fullyQualifiedTypeName name="com.example.telecommclient.R.layout"/>
 </qualifiedTypeNameHistroy>

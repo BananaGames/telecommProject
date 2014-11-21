@@ -1,0 +1,56 @@
+package com.example.telecommclient;
+
+public class TicTacToeGame {
+	
+	private char[][] TicTacToeBoard = new char[3][3];
+	private boolean myTurn = false;
+	private static final char nullChar = '-';
+	private static int turns = 0;
+	
+	
+	private void resetCharArray(char[] Array) {
+		for (int i = 0; i < Array.length; i++) {
+			Array[i] = nullChar;
+		}
+	}
+	
+	private void resetCharArray(char[][] Array) {
+		for (int i = 0; i < Array.length; i++) {
+			for (int j = 0; j < Array[i].length; i++) {
+				Array[i][j] = nullChar;
+			}
+		}
+	}
+	
+    public void init(){
+    	resetCharArray(TicTacToeBoard);
+    }
+    
+    public boolean testTriple(char[] row){
+    	for (int i = 1; i < row.length; i++){
+    		if (row[i] != row[0] && row[0] != nullChar){
+    			return false;
+    		}
+    	}
+    	return true;
+    }
+    
+    public boolean testWin(){
+    	char [][] TTT = TicTacToeBoard;
+    	for(int i = 0; i< TTT.length; i++){
+    		if(testTriple(TTT[i]))
+    		{
+    			return true;
+    		}
+        	char[] testV = {TTT[0][i], TTT[1][i], TTT[2][i]}; 
+    		if (testTriple(testV)){
+    			return true;
+    		}
+    	}
+    	char [] testDL = {TTT[0][0], TTT[1][1], TTT[2][2]};
+    	char [] testDR = {TTT[2][0], TTT[1][1], TTT[0][2]};
+    	
+    }
+	
+
+}

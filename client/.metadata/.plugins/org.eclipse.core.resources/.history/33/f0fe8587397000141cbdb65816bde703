@@ -1,0 +1,12 @@
+package com.example.telecommclient;
+
+public class TicTacToeFacade {
+
+	private static Game = new TicTacToeBoard();
+	
+	public void startGame(){
+		
+	}
+	
+	
+}

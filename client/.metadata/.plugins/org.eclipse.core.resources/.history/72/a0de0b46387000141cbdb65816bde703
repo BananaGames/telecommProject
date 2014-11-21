@@ -1,0 +1,120 @@
+package com.example.telecommclient;
+
+public class TicTacToeGame {
+
+	private char[][] TicTacToeBoard = new char[3][3];
+	private boolean myTurn = false;
+	private static final char nullChar = '-';
+	private static int turns = 0;
+
+	private void resetCharArray(char[] Array) {
+		for (int i = 0; i < Array.length; i++) {
+			Array[i] = nullChar;
+		}
+	}
+
+	private void resetCharArray(char[][] Array) {
+		for (int i = 0; i < Array.length; i++) {
+			for (int j = 0; j < Array[i].length; i++) {
+				Array[i][j] = nullChar;
+			}
+		}
+	}
+
+	public void init() {
+		resetCharArray(TicTacToeBoard);
+	}
+
+	public boolean testTriple(char[] row) {
+		for (int i = 1; i < row.length; i++) {
+			if (row[i] != row[0] && row[0] != nullChar) {
+				return false;
+			}
+		}
+		return true;
+	}
+
+	public boolean testWin() {
+		char[][] TTT = TicTacToeBoard;
+		for (int i = 0; i < TTT.length; i++) {
+			char[] testV = { TTT[0][i], TTT[1][i], TTT[2][i] };
+			if (testTriple(testV) || testTriple(TTT[i])) {
+				return true;
+			}
+		}
+		char[] testDL = { TTT[0][0], TTT[1][1], TTT[2][2] };
+		char[] testDR = { TTT[2][0], TTT[1][1], TTT[0][2] };
+		if (testTriple(testDL) || testTriple(testDR)) {
+			return true;
+		}
+		return false;
+	}
+	
+	public void changeArray(char[][] array, int i, int j, char xo) throws Exception{
+		if (array[i][j] == nullChar) {
+			array[i][j] = xo;
+		} else {
+			throw new Exception();
+		}
+	}
+
+	public void addToBoard(char xo, BoardPosition position) throws Exception {
+		if (xo != 'X' && xo != 'O') {
+			throw new Exception();
+		}
+		switch (position) {
+		case BOTLEFT:
+
+			break;
+		case BOTMID:
+			break;
+		case BOTRIGHT:
+			break;
+		case MIDLEFT:
+			if (TicTacToeBoard[1][0] == nullChar) {
+				TicTacToeBoard[1][0] = xo;
+			} else {
+				throw new Exception();
+			}
+			break;
+		case MIDMID:
+			if (TicTacToeBoard[1][1] == nullChar) {
+				TicTacToeBoard[1][1] = xo;
+			} else {
+				throw new Exception();
+			}
+			break;
+		case MIDRIGHT:
+			if (TicTacToeBoard[1][2] == nullChar) {
+				TicTacToeBoard[1][2] = xo;
+			} else {
+				throw new Exception();
+			}
+			break;
+		case TOPLEFT:
+			if (TicTacToeBoard[0][0] == nullChar) {
+				TicTacToeBoard[0][0] = xo;
+			} else {
+				throw new Exception();
+			}
+			break;
+		case TOPMID:
+			if (TicTacToeBoard[0][1] == nullChar) {
+				TicTacToeBoard[0][1] = xo;
+			} else {
+				throw new Exception();
+			}
+			break;
+		case TOPRIGHT:
+			if (TicTacToeBoard[0][2] == nullChar) {
+				TicTacToeBoard[0][2] = xo;
+			} else {
+				throw new Exception();
+			}
+			break;
+		default:
+			throw new Exception();
+		}
+	}
+
+}
